@@ -1,0 +1,47 @@
+﻿* {
+    margin: 0;
+    padding: 0;
+    border:0;
+}
+
+@font-face {
+    font-family: freestyleScript;
+    src: url(FREESCPT.TTF);
+}
+
+body {
+    background-color: #ecf0f1;
+    font-size: 18px;
+}
+
+h1 {
+    font-family: freestyleScript;
+}
+
+.loading {
+    background-color: #16a085;
+    color: #ecf0f1;
+    width: 100%;
+    height: 100vh;
+}
+
+.page {
+    background: linear-gradient(to bottom, #16a085 0%, #16a085 300px, #ecf0f1 300px, #ecf0f1);
+    height: 100vh;
+}
+
+button.primary {
+    color: #ecf0f1;
+    padding: 10px;
+    background-color: #16a085;
+    border: 0;
+    border-radius: 10px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.logo {
+    padding-left: 10px;
+    padding-top: 10px;
+    color: #ecf0f1;
+}

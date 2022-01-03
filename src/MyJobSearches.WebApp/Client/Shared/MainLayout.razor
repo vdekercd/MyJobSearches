@@ -1,0 +1,32 @@
+﻿@inherits LayoutComponentBase
+@inject NavigationManager Navigation
+
+<div class="page">
+<AuthorizeView>
+    <Authorized>
+        <div class="logo">
+            <h1 style="font-size: 30px;"><i class="fas fa-briefcase"></i>&nbsp; My Job Searches</h1>
+        </div>
+       @Body
+    </Authorized>
+    <NotAuthorized>
+            <div style="text-align: center; padding-top:150px; color: #ecf0f1; margin-left: auto; margin-right:auto;">
+                    <h1 style="font-size: 64px;"><i class="fas fa-briefcase"></i>&nbsp; My Job Searches</h1>
+            </div>
+            <div style="text-align: center; width:100%; margin-top:150px; color: #ecf0f1;">
+            <MudButton class="primary" @onclick="@OnLoginClick">
+                <i class="fas fa-sign-in-alt"></i> &nbsp; Se connecter / S'enregistrer
+            </MudButton>
+            </div>
+            @Body
+    </NotAuthorized>
+</AuthorizeView>
+</div>
+
+@code
+{
+    public void OnLoginClick()
+    {
+         Navigation.NavigateTo($"authentication/login");
+    }
+}
