@@ -51,5 +51,10 @@ namespace MyJobSearches.DataAccess.Repositories
         {
             return Task.CompletedTask;
         }
+
+        public async Task<List<TEntity>> GetAllAsync()
+        {
+            return await EntityDbSet.ToListAsync();
+        }
     }
 }

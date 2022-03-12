@@ -13,7 +13,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Client\MyJobSearches.WebApp.Client.csproj" />
     <ProjectReference Include="..\Shared\MyJobSearches.WebApp.Shared.csproj" />
   </ItemGroup>
 

@@ -23,6 +23,7 @@
   <ItemGroup>
     <ProjectReference Include="..\..\src\MyJobSearches.Domain\MyJobSearches.Domain.csproj" />
     <ProjectReference Include="..\MyJobSearches.DataAccess.Common.Test\MyJobSearches.Common.Test.csproj" />
+    <ProjectReference Include="..\MyJobSearches.DataAccess.Test\MyJobSearches.DataAccess.Test.csproj" />
   </ItemGroup>
 
 </Project>

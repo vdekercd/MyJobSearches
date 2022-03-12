@@ -57,7 +57,7 @@ public class CurriculumVitaeRepositoryTest
     {
         var curriculumVitaeEntity = CurriculumVitaeEntityTestUtility.GetANewCv();
 
-        await UpdateCurriculumVitaeRepositoryInstance();
+        await UpdateCurriculumVitaeRepositoryInstanceAsync();
         _curriculumVitaeRepository!.Add(curriculumVitaeEntity);
         await _curriculumVitaeRepository.SaveChangesAsync();
 
@@ -67,11 +67,11 @@ public class CurriculumVitaeRepositoryTest
     private async Task<CurriculumVitaeEntity> ReloadRepositoryAndGetAsync(int id)
     {
         _curriculumVitaeRepository = null;
-        await UpdateCurriculumVitaeRepositoryInstance();
+        await UpdateCurriculumVitaeRepositoryInstanceAsync();
         return await _curriculumVitaeRepository!.FindAsync(id);
     }
 
-    private async Task UpdateCurriculumVitaeRepositoryInstance()
+    private async Task UpdateCurriculumVitaeRepositoryInstanceAsync()
     {
         _curriculumVitaeRepository =
             await MyJobSearchesDbContextUtility.GetRepository<CurriculumVitaeEntity, CurriculumVitaeRepository>(_curriculumVitaeRepository!);

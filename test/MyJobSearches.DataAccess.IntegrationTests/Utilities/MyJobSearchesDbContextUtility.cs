@@ -10,7 +10,7 @@ public class MyJobSearchesDbContextUtility
     {
         if (instance == null)
         {
-            instance = (TRespository)Activator.CreateInstance(typeof(TRespository), await GetMyJobSearchesDbContext());
+            instance = (TRespository)Activator.CreateInstance(typeof(TRespository), await GetMyJobSearchesDbContext())!;
             if (instance == null) throw new ArgumentNullException(nameof(instance));
         }
         return instance;
@@ -19,7 +19,7 @@ public class MyJobSearchesDbContextUtility
     public static async Task<MyJobSearchesDbContext> GetMyJobSearchesDbContext()
     {
         var context = new MyJobSearchesDeignTimeDbContext().Create();
-        await DeleteDatabaseIfFirstCall(context);
+        //await DeleteDatabaseIfFirstCall(context);
         await context.Database.EnsureCreatedAsync();
         return context;
     }

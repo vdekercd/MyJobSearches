@@ -1,7 +1,4 @@
-﻿using MyJobSearches.Common.Test.Utilities;
-using MyJobSearches.Domain.Adapters;
-
-namespace MyJobSearches.DataAccess.Test.Adapters;
+﻿namespace MyJobSearches.Domain.Test.Adapters;
 
 public class CandidacyAdapterTest
 {

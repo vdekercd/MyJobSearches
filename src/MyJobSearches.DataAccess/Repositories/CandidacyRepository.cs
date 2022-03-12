@@ -6,9 +6,9 @@ public class CandidacyRepository : RepositoryBase<CandidacyEntity>
 
     public CandidacyRepository(MyJobSearchesDbContext context) : base(context)
     {
-        EntityDbSet = _dbContext.CandidacyEntities;
+        EntityDbSet = _dbContext.CandidacyEntities!;
     }
-
+    
     protected override async Task LoadChildren(CandidacyEntity candidacy)
     {
         if (candidacy != null)

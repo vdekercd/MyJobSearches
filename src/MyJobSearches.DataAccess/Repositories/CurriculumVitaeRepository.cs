@@ -6,7 +6,7 @@ public class CurriculumVitaeRepository : RepositoryBase<CurriculumVitaeEntity>
 
     public CurriculumVitaeRepository(MyJobSearchesDbContext context) : base(context)
     {
-        EntityDbSet = _dbContext.CurriculumVitaeEntities;
+        EntityDbSet = _dbContext.CurriculumVitaeEntities!;
     }
 }
 

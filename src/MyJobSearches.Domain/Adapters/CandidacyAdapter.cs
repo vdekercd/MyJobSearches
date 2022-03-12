@@ -1,4 +1,4 @@
-﻿namespace MyJobSearches.DataAccess.Adapters
+﻿namespace MyJobSearches.Domain.Adapters
 {
     public class CandidacyAdapter
     {

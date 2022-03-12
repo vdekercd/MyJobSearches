@@ -3,3 +3,8 @@ global using MyJobSearches.Domain.Models;
 global using MyJobSearches.Common.Test.Utilities;
 global using MyJobSearches.Domain.Validators;
 global using Xunit;
+global using MyJobSearches.DataAccess.Entities;
+global using MyJobSearches.Domain.Adapters;
+global using MyJobSearches.Domain.Test.Adapters.Utilities;
+global using MyJobSearches.DataAccess.Repositories;
+global using MyJobSearches.DataAccess.Test.Repositories;

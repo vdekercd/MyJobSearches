@@ -6,7 +6,7 @@ public class MyJobSearchesDbContext : DbContext
     {
     }
 
-    public DbSet<CandidacyEntity> CandidacyEntities { get; set; }
-    public DbSet<CurriculumVitaeEntity> CurriculumVitaeEntities { get; set; }
+    public DbSet<CandidacyEntity>? CandidacyEntities { get; set; }
+    public DbSet<CurriculumVitaeEntity>? CurriculumVitaeEntities { get; set; }
 }
 
