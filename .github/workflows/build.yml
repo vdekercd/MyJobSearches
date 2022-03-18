@@ -46,5 +46,5 @@ jobs:
           dotnet clean ./MyJobSearches.sln
           dotnet restore ./MyJobSearches.sln
           dotnet build ./MyJobSearches.sln
-          dotnet-coverage collect 'dotnet test' -f xml  -o 'coverage.xml'
+          dotnet test ./MyJobSearches.sln --collect "Code Coverage"
           .\.sonar\scanner\dotnet-sonarscanner end /d:sonar.login="${{ secrets.SONAR_TOKEN }}"
