@@ -35,9 +35,9 @@ namespace MyJobSearches.DataAccess.Repositories
             _dbContext.Entry(entity).State = EntityState.Modified;
         }
 
-        public async Task<TEntity> FindAsync(int id)
+        public async Task<TEntity> FindAsync(int entityId)
         {
-            var entity = await EntityDbSet.FindAsync(id);
+            var entity = await EntityDbSet.FindAsync(entityId);
             await LoadChildren(entity!);
             return entity!;
         }

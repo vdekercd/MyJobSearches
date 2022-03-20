@@ -14,7 +14,7 @@
                 companyEmail: candidacyEntity.EmailTo,
                 filename: candidacyEntity.Filename,
                 candidacyDate: DateOnly.FromDateTime(candidacyEntity.CandidacyDate)
-                ); ;
+                );
         }
 
         public CandidacyEntity AdaptToCandidacyEntity(Candidacy candidacy)
